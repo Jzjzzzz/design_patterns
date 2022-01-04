@@ -3,7 +3,7 @@ package com.jzj.builder.demo2;
  * @Author Jzj
  * @Date 2022/1/3 20:35
  * @Version 1.0
- * 手机类
+ * 手机类(建造者模式，链式编程)
  */
 public class Phone {
     private String cpu;
@@ -46,7 +46,6 @@ public class Phone {
             return new Phone(this);
         }
     }
-
 
     @Override
     public String toString() {

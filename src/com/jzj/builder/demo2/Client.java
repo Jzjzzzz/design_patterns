@@ -8,6 +8,12 @@ package com.jzj.builder.demo2;
 public class Client {
     public static void main(String[] args) {
 
+        R r = R.ok().message("调用成功ok");
+        R r2 = R.error().message("调用成功error");
+        System.out.println(r == r2);
+        System.out.println(r.getMessage() );
+        System.out.println(r2.getMessage() );
+
         Phone phone = new Phone.Builder()
                 .cpu("intel")
                 .screen("三星屏幕")
