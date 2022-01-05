@@ -12,5 +12,6 @@ public class Client {
 
         AbstractBox box2 = BoxFactory.getInstance().getShape("O");
         box2.display("白色");
+
     }
 }
